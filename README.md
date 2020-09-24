@@ -69,11 +69,11 @@ foreach (var f in funcs)
 {   Console.WriteLine(f());}
         用我们刚才的知识来判断的话，输出结果应该是3个30。然而在C#4.0确实是这样，然而C#5.0会在foreach创建的while循环的代码块中创建一个不同的局部循环变量，所以这时在C#5.0中我们输出的结果应该是分别输出10,20和30。
 
- using UnityEngine;
-using System;//EventArgs需要
-using UnityEngine.Events;//Unity事件需要
-using UnityEngine.UI;//展示注册已有的UI事件
-public class Mom : MonoBehaviour {
+    using UnityEngine;
+    using System;//EventArgs需要
+    using UnityEngine.Events;//Unity事件需要
+    using UnityEngine.UI;//展示注册已有的UI事件
+    public class Mom : MonoBehaviour {
        //本代码是以总结顺序写的，声明-定义-注册-调用。
        //用法1：一个对象可以一口气执行多个方法，并且可顺序执行其他类的方法，用于监听-执行
        //1.声明一个C#委托协定，指定方法签名
