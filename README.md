@@ -82,7 +82,7 @@ public class Mom : MonoBehaviour {
        MyDelegate myDelegate;
        //2.C#事件的声明：event+委托+事件名
        public event MyDelegate CSharpEvent;
-       //事件就是一个委托对象，而委托可以是一种类型
+     ###  //事件就是一个委托对象，而委托可以是一种类型  ###
        //3.C#自身提供了一种比较好的委托类型:EventHandler
        //sender表示事件源，e表示事件相关的信息
        public delegate void EventHandler(object sender, EventArgs e);
@@ -97,7 +97,7 @@ public class Mom : MonoBehaviour {
        public UnityAction unityAction;//本质是delegate
        public UnityEvent unityEvent = new UnityEvent();//也可以在定义时new。本质上是继承自UnityEventBase的类
        
-       //7.Unity泛型委托
+     //7.Unity泛型委托
        //因为UnityEvent<T0>是抽象类，所以需要声明一个类来继承它
        public class UnityActionWithParameter: UnityEvent<int>{
               //嵌套类
